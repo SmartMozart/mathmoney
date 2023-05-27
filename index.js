@@ -11,9 +11,8 @@ answer.addEventListener("keydown", function(event) {
 });
 
 answer.addEventListener("keydown", function(event) {
-	if (event.key === "r") {
-		localStorage.setItem('correct', 0);
-		location.reload();
+	if (event.key === "c") {
+		location = '/count';
 	}
 });
 

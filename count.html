@@ -9,6 +9,14 @@
 	<h1 id="counter"></h1>
 	<script type="text/javascript">
 document.getElementById('counter').innerText = localStorage.getItem('correct');
+window.addEventListener("keydown", function(event) {
+	if (event.key === "r") {
+		localStorage.setItem('correct', 0);
+		location = '/';
+	} else if (event.key === 'b') {
+		location = '/';
+	}
+});
 	</script>
 </body>
 </html>
